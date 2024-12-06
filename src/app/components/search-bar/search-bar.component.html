@@ -1,0 +1,18 @@
+<div>
+    <h2>Barra de busqueda</h2>
+</div>
+
+
+
+
+   <div>
+    <!-- Campo de entrada para la búsqueda de países -->
+    <input type="text" (input)="onSearch($event)" placeholder="Filtra la busqueda">
+    <!-- Campo de selección para ordenar los países -->
+    <select (change)="onSort($event)">
+      <option value="name">Nombre</option>
+      <option value="population">Poblacion</option>
+      <option value="area">Area</option>
+    </select>
+  </div>
+  

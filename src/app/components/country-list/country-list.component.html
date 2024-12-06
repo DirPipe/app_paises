@@ -1,0 +1,14 @@
+<div>
+    <h2>Paises Listados:</h2>
+  </div>
+  
+   <div class="card-container">
+    <!-- Muestra cada país en una tarjeta -->
+    <div class="card" *ngFor="let country of filteredCountries">
+      <img [src]="country.flags.png" alt="{{ country.name.common }}">
+      <h2>{{ country.name.common }}</h2>
+      <p>Poblacion: {{ country.population }}</p>
+      <p>Area: {{ country.area }} km²</p>
+    </div>
+  </div>
+  
